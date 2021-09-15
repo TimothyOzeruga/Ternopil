@@ -1,0 +1,30 @@
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "font-face";
+@import "fonts";
+@import "hamburger";
+
+// подключения компонентов страницы
+@import "./components/header";
+@import "./components/map";
+@import "./components/contact";
+@import "./components/contact_form";
+
+
+
+body{
+    font-family: Qanelas-Regular;
+    background-color: #fff;
+    color: $text_color;
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main{
+    padding-top: 80px;
+}

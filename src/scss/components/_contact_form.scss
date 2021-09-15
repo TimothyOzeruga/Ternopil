@@ -1,0 +1,105 @@
+.contact_form{
+    padding-bottom: 200px;
+}
+.form_wrap{
+    display: flex;
+    justify-content: center;
+}
+form{
+    width: 580px;
+    background-color: #e6edf1;
+    padding: 70px;
+
+    @include mobile{
+        width: 80%;
+        padding: 50px 30px;
+    }
+}
+.form_title{
+    font-family: Comfortaa-Bold;
+    @include adaptiv-font(40, 24);
+    text-align: center;
+    margin-bottom: 30px;
+}
+.form-label{
+    display: block;
+    margin-bottom: 8px;
+}
+.form-control{
+    width: 100%;
+    font-family: Qanelas-Regular;
+    font-size: 14px;
+	padding: 18px 0 18px 10px;
+	border: 1px solid #ffffff;
+	background: #F6F6f6;
+	border-radius: 4px;
+    box-shadow:4px 4px 10px rgba(0,0,0,0.06);
+}
+textarea {
+	overflow: auto;
+	resize: none;
+	height: 170px;
+}
+.name_phone_wrap{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+    .name_wrap{
+        width: 48%;
+    }
+    .phone_wrap{
+        width: 48%;
+    }
+    @include mobile{
+        flex-direction: column;
+        .name_wrap{
+            width: 100%;
+            margin-bottom: 30px;
+        }
+        .phone_wrap{
+            width: 100%;
+        }
+    }
+}
+.email_wrap{
+    margin-bottom: 30px;
+}
+.msg_wrap{
+    margin-bottom: 50px;
+}
+.btn_wrap{
+    display: flex;
+    justify-content: center;
+}
+
+
+.has_err input {
+    border-color: tomato;
+}
+.error{
+    color: tomato;
+}
+#top_panel {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    font-size: 24px;
+    background-color: rgba(90, 90, 90, .8);
+    color: #fff;
+    z-index: 2000000;
+}
+#top_panel.panel_success {
+    background-color: rgba(9, 153, 20, .8);
+}
+#top_panel.panel_warning {
+    background-color: rgba(235, 166, 13, .8);
+}
+
+
+
+

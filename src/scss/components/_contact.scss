@@ -1,0 +1,63 @@
+.contact{
+    background-color: #f6f8f9;
+    margin-bottom: 90px;
+
+    &__info_wrap{
+        padding: 90px 0;
+        display: flex;
+    }
+
+    &__phones{
+        flex: 1 1 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__adress{
+        flex: 1 1 40%;
+    }
+    .contact__adress_wrap{
+        display: flex;
+        flex-direction: column;
+    }
+    &__title{
+        font-family: Qanelas-Bold;
+        margin-bottom: 20px;
+    }
+    &__text{
+        margin-bottom: 16px;
+    }
+    &__link{
+        font-family: Qanelas-Regular;
+        color: $text_color;
+
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+
+@include mobile{
+    .contact{
+        &__info_wrap{
+            padding: 50px 0;
+            flex-direction: column;
+        }
+        &__phones{
+            flex: 1 1 100%;
+            margin-bottom: 30px;
+        }
+        .contact__phones_wrap{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__adress{
+            flex: 1 1 100%;
+        }
+        .contact__adress_wrap{
+            align-items: center;
+        }
+    }
+}
+

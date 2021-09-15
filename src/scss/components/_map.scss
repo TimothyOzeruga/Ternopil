@@ -1,0 +1,38 @@
+.wrap_map{
+    height: 80vh;
+    margin-bottom: 200px;
+
+    @include mobile{
+        margin-bottom: 60px;
+    }
+}
+
+#map {
+    height: 100%;
+    position: relative;
+    z-index: 8;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+#map_link {
+    @include flex-all-center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, .7);
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    text-decoration: none;
+    opacity: 0;
+    transition: all .2s ease;
+    &:hover{
+        opacity: 1;
+    }
+}
